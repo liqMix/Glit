@@ -25,15 +25,12 @@ type Resources struct {
 	// soundMap
 }
 
-//go:embed *
-var embedFS embed.FS
-
 var (
 	ErrNoSuchCategory   = errors.New("no such category")
 	ErrMissingDirectory = errors.New("missing directory")
 )
 
-func InitResources() *Resources {
+func InitResources(embedFS embed.FS) *Resources {
 	resources := &Resources{
 		spriteMap: make(map[string]*image.Image),
 		levelMap:  make(map[string]string),
@@ -111,6 +108,7 @@ func (r *Resources) Load() error {
 			return err
 		}
 		r.musicMap[name] = *song
+		fmt.Printf("Loaded music %s\n", name)
 		return nil
 	})
 	if err != nil {

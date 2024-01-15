@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	"holidayebijam23/defs"
 
 	"github.com/hajimehoshi/ebiten/v2"
@@ -12,6 +13,9 @@ const (
 	ScreenHeight = 720
 )
 
+//go:embed assets/*
+var embedFS embed.FS
+
 func main() {
 	ebiten.SetWindowTitle("Glit")
 	ebiten.SetWindowDecorated(true)
@@ -21,7 +25,9 @@ func main() {
 
 	// ebiten.SetCursorMode(ebiten.CursorModeHidden)
 	// ebiten.SetFullscreen(true)
-	var resources = defs.InitResources()
+
+	var resources = defs.InitResources(embedFS)
+
 	audio.NewContext(44100)
 	if err := ebiten.RunGame(NewGame(resources)); err != nil {
 		panic(err)
