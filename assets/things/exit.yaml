@@ -1,0 +1,5 @@
+name: exit
+symbol: e
+block: false
+blockGlitch: true
+exit: true

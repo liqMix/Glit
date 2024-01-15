@@ -1,0 +1,5 @@
+name: player
+symbol: '@'
+block: false
+speed: 1.5
+energy: 100

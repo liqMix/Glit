@@ -1,0 +1,5 @@
+name: vblock
+symbol: ;
+enemy: true
+behavior: left
+speed: 1

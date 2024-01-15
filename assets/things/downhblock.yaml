@@ -1,0 +1,5 @@
+name: hblock
+symbol: H
+enemy: true
+behavior: down
+speed: 1

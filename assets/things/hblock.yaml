@@ -1,0 +1,5 @@
+name: hblock
+symbol: g
+enemy: true
+block: true
+blockGlitch: true
