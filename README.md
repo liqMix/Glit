@@ -5,4 +5,4 @@ My contribution to the:
 
 ![Game](ss.png)
 
-Get to the stairs and survive and glit™ your way to the stairs to survive while glit™ing™.
+Glit™ to the stairs while surviving glitched environment and glit™ your way to the stairs and to survive while glit™ing™.
