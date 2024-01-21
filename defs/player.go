@@ -30,9 +30,9 @@ func (p *Player) GetAction() *Action {
 	action := &Action{
 		Move: &Move{},
 	}
-	if ebiten.IsKeyPressed(ebiten.KeyUp) {
+	if ebiten.IsKeyPressed(ebiten.KeyUp) || ebiten.IsKeyPressed(ebiten.KeyW) {
 		action.Move.vY = -1
-	} else if ebiten.IsKeyPressed(ebiten.KeyDown) {
+	} else if ebiten.IsKeyPressed(ebiten.KeyDown) || ebiten.IsKeyPressed(ebiten.KeyS) {
 		action.Move.vY = 1
 	} else {
 		action.Move.vY = 0
