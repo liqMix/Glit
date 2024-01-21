@@ -37,9 +37,9 @@ func (p *Player) GetAction() *Action {
 	} else {
 		action.Move.vY = 0
 	}
-	if ebiten.IsKeyPressed(ebiten.KeyLeft) {
+	if ebiten.IsKeyPressed(ebiten.KeyLeft) || ebiten.IsKeyPressed(ebiten.KeyA) {
 		action.Move.vX = -1
-	} else if ebiten.IsKeyPressed(ebiten.KeyRight) {
+	} else if ebiten.IsKeyPressed(ebiten.KeyRight) || ebiten.IsKeyPressed(ebiten.KeyD) {
 		action.Move.vX = 1
 	} else {
 		action.Move.vX = 0
