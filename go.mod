@@ -1,4 +1,4 @@
-module holidayebijam23
+module github.com/liqmix/glit
 
 go 1.20
 

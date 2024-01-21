@@ -2,10 +2,10 @@ package main
 
 import (
 	"embed"
-	"holidayebijam23/defs"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/audio"
+	"github.com/liqmix/glit/defs"
 )
 
 const (

@@ -1,10 +1,9 @@
 package main
 
 import (
-	"holidayebijam23/defs"
-
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/audio"
+	"github.com/liqmix/glit/defs"
 )
 
 type Game struct {
